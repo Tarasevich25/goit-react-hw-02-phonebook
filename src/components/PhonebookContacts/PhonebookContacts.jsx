@@ -17,6 +17,7 @@ const PhonebookContacts = ({ contacts,onDeleteContact }) => {
 };
 
 PhonebookContacts.propTypes = {
+  onDeleteContact : PropTypes.func.isRequired,
   contacts: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
